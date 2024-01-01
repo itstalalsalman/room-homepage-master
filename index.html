@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Room homepage</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div class="top__container__main">
+    
+    <div class="navbar__container">
+      <div class="navbar">
+        <img src="./images/logo.svg" alt="logo" class="logo__icon">
+        <ul class="navbar__items">
+          <li class="close__item"><img src="./images/icon-close.svg" alt="close" class="img_close" style="display: none;"></li>
+          <li class="item">home</li>
+          <li class="item">shop</li>
+          <li class="item">about</li>
+          <li class="item">contact</li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="mobile__navbar">
+      <img src="./images/mobile-image-hero-1.jpg" alt="" class="mobile__hero__img">
+      <div class="clicked__nav__bar" style="display: none;">
+        <img src="./images/icon-close.svg" alt="close" class="icon__close">
+        <ul class="navbar__items">
+          <li class="item">home</li>
+          <li class="item">shop</li>
+          <li class="item">about</li>
+          <li class="item">contact</li>
+        </ul>
+      </div>
+
+      <div class="mobile__nav__cont">
+        <img src="./images/icon-hamburger.svg" alt="icon-hamburger" class="img__ham">
+        <img src="./images/logo.svg" alt="logo" class="mobile__logo">
+      </div>
+    
+      <div class="btn__container__mobile">
+        <button class="left"><img src="./images/icon-angle-left.svg" alt="icon__left" class="btn__left__arrow"></button>
+        <button class="right"><img src="./images/icon-angle-right.svg" alt="icon__right" class="btn__right__arrow"></button>
+      </div>
+
+    </div>
+
+
+    <div class="navbar__text__container">
+      
+      <div class="text__info">
+        <h1 class="nav__text__head">Discover innovative ways to decorate</h1>
+        <p class="nav__text__para">
+          We provide unmatched quality, comfort, and style for property owners across the country. 
+          Our experts combine form and function in bringing your vision to life. Create a room in your 
+          own style with our collection and make your property a reflection of you and what you love.
+        </p>
+        <h6 class="btn__shop__now">SHOP NOW <img src="./images/icon-arrow.svg" alt="arrow" class="icon__arrow"></h6>
+      </div> 
+      
+      <div class="btn__container">
+        <button class="left"><img src="./images/icon-angle-left.svg" alt="icon__left" class="btn__left__arrow"></button>
+        <button class="right"><img src="./images/icon-angle-right.svg" alt="icon__right" class="btn__right__arrow"></button>
+      </div>
+    
+    </div>
+
+  </div>
+
+  <div class="bottom__furniture__grid">
+    
+    <div class="img__grid">
+      <img src="./images/image-about-dark.jpg" alt="dark__furniture" class="img__dark__furniture">
+    </div>
+    
+    <div class="text__grid__cont">
+      <div class="text__grid">
+        <h1 class="furniture__info__head">About our furniture</h1>
+        <p class="furniture__info__text">
+          Our multifunctional collection blends design and function to suit your individual taste.
+          Make each room unique, or pick a cohesive theme that best express your interests and what
+          inspires you. Find the furniture pieces you need, from traditional to contemporary styles
+          or anything in between. Product specialists are available to help you create your dream space.
+        </p>
+      </div>
+    </div>
+    
+    <div class="img__grid">
+      <img src="./images/image-about-light.jpg" alt="light__furniture" class="img__light__furniture">
+    </div>
+  
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Talal Salman Zafeer</a>.
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+</body>
+</html>

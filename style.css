@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600;700&display=swap');
+:root{
+    --DarkGray: hsl(0, 0%, 63%);
+    --Black: hsl(0, 0%, 0%);
+    --White: hsl(0, 0%, 100%);
+    --VeryDarkGray: hsl(0, 0%, 27%);
+    --LeagueSpartan: 'League Spartan', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--LeagueSpartan);
+}
+
+.top__container__main{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex: 1 1 1;
+    flex-direction: row;
+    position: relative;
+}
+
+.navbar__container{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    background-image: url(./images/desktop-image-hero-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    transition: background-image 0.5s ease-in-out;
+}
+
+
+.navbar{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    gap: 8%;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 8%;
+}
+
+.logo__icon
+{
+    width: 10%;
+    height: 12%;
+}
+
+.navbar__items{
+    width: 40%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15%;
+    list-style: none;
+}
+
+.item{
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1vw;
+}
+
+.item:hover{
+    border-bottom: 3px solid var(--White);
+    border-radius: 1px;
+    cursor: pointer;  
+    transition: border-bottom 0.1s ease-in-out; 
+}
+
+.mobile__navbar{
+    display: none;
+}
+
+.navbar__text__container{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex: 1 1 1;
+}
+
+.text__info{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    gap: 5%;
+    flex: 1 1 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+.nav__text__head{
+    font-size: 3vw;
+    color: var(--Black);
+    font-weight: 600;
+}
+
+.nav__text__para{
+    width: 95%;
+    line-height: 20px;
+    font-size: 1vw;
+    font-weight: 500;
+    color: var(--DarkGray);
+}
+
+.btn__shop__now{
+    cursor: pointer;
+    letter-spacing: 8px;
+    font-size: 1vw;
+    font-weight: 500;
+}
+
+.btn__shop__now:hover{
+    color: var(--DarkGray)
+}
+
+.icon__arrow:hover{
+    color: var(--DarkGray);
+}
+
+.icon__close{
+    cursor: pointer;
+}
+
+.btn__container{
+    display: flex;
+    width: 20%;
+    height: 10%;
+    background-color: var(--Black);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.right{
+    border: none;
+    background-color: var(--Black);
+    width: 50%;
+    cursor: pointer;
+}
+
+.left{
+    border: none;
+    background-color: var(--Black);
+    width: 50%;
+    cursor: pointer;
+}
+
+.right:hover{
+    background-color: var(--VeryDarkGray);
+    transition: background-color 0.5s ease-in-out;
+}
+.left:hover{
+    background-color: var(--VeryDarkGray);
+    transition: background-color 0.3s ease-in-out;
+}
+
+
+.bottom__furniture__grid{
+    width: 100%;
+    height: 30vh;
+    display: grid;
+    grid-template-rows: 30vh;
+    grid-template-columns: 28% 44% 28%;
+}
+
+.img__grid{
+    height: 100%;
+}
+
+.img__dark__furniture{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.text__grid__cont{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex: 1 1 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.text__grid{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 1;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 5%;
+}
+
+.furniture__info__head{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.3vw;
+    color: var(--Black);
+    letter-spacing: 5px;
+}
+
+.furniture__info__text{
+    color: var(--DarkGray);
+    font-weight: 500;
+    line-height: 20px;
+    font-size: 1vw;
+}
+
+.img__light__furniture{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 500px)
+{
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .top__container__main{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar__container{
+        display: none;
+    }
+    .mobile__navbar{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 50%;
+        overflow: hidden;
+    }
+    .mobile__hero__img{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .clicked__nav__bar{
+        position: absolute;
+        width: 100%;
+        height: 15vh;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        justify-content: center;
+        background-color: white;   
+        gap: 20%;
+        top: 0;
+        left: 0;
+    }
+
+    .navbar__items{
+        width: 60%;
+    }
+
+    .mobile__nav__cont{
+        width: 100%;
+        height: 15vh;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        position: absolute;
+        gap: 34%;
+        top: 0;
+        left: 0;
+    }
+
+    .img__ham{
+        margin-left: 5%;
+        cursor: pointer;
+    }
+
+    .btn__container__mobile{
+        display: flex;
+        width: 23%;
+        height: 13%;
+        background-color: var(--Black);
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    .item{
+        font-size: 3vw;
+        font-weight: 600;
+    }
+
+    .item:hover{
+
+        border-bottom: 3px solid var(--Black);
+        border-radius: 1px;
+        transition: border-bottom 0.1s ease-in-out;
+    }
+
+    .navbar__text__container{
+        width: 100%;
+        height: 50%;
+    }
+
+    .text__info{
+        width: 80%;
+        gap: 5%;
+    }
+
+    .nav__text__head{
+        font-size: 8vw;
+    }
+
+    .nav__text__para{
+        width: 100%;
+        font-size: 3.5vw;
+        font-weight: 500;
+    }
+
+    .btn__shop__now{
+        margin-top: 5%;
+        font-size: 3vw;
+    }
+
+    .btn__container{
+        display: none;
+    }
+
+    .bottom__furniture__grid{
+        width: 100%;
+        height: 100vh;
+        grid-template-columns: 100%;
+        grid-template-rows: 30% 40% 30%;
+    }
+
+
+    .text__grid{
+        width: 80%;
+    }
+
+    .furniture__info__head{
+        font-size: 3.5vw;
+        font-weight: 700;
+    }
+
+    .furniture__info__text{
+        width: 95%;
+        font-size: 3.5vw;
+    }
+
+    .btn__left__arrow{
+        width: 20%;
+    }
+
+    .btn__right__arrow{
+        width: 20%;
+    }
+
+
+
+}
+
+
+
+
+
